@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="pw-container">
+        <h1 class="heading">Password Generator</h1>
+        <div class="pw-header">
+            <div class="pw" di="pw">
+                <span id="pw">182338ncju*b3^&dnjwn</span> 
+                <div class="tooltip">
+                    <button id="copy"><i class ="material-icons">content_copy</i></button>
+                </div>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label>Password Length</label>
+                <input id="len" value="15";
+                type="number" min="2" max="40"/>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="upper">Contains UpperCase Letters</label>
+                <input id="upper"
+                type="checkbox"/>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="lower">Contains LowerCase Letters</label>
+                <input id="lower"
+                type="checkbox"/>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="number">Contains Numbers</label>
+                <input id="number"
+                type="checkbox"/>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="symbol">Contains Symbols</label>
+                <input id="symbol"
+                type="checkbox"/>
+            </div>
+            <button class="generate" 
+            id="generate">Generate Password
+            </button>
+        </div>
+    </div>
+</body>
+</html>
